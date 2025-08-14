@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <title>Theatre Application - Hamilton Musical</title>
+  <style>
+    h1, h2 {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>Theatre Application</h1>
+  <h2>For "Hamilton Musical"</h2>
+
+
+
+   <table>
+    <tr>
+      <td>
+    
+        <img src="https://www.dancelife.com.au/wp-content/uploads/2019/05/hamilton-tile.jpg" alt="Hamilton" width="150">
+      </td>
+      <td style="padding-left: 15px;">
+        <p>
+          Please fill out the following form to audition for a role in the Hamilton Musical. <br>Make sure to complete all required fields and upload your audition video and photo.
+        </p>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+
+    <textarea id="text area" name="note" rows="4" cols="50" placeholder="Write a note here..."></textarea>
+  </p>
+
+  <video width="320" height="240" controls>
+    <source src="c:\Users\oprin\Downloads\HAMILTON  Disney Trailer  Official Disney UK.mp4" type="video/mp4">
+    
+  </video>
+
+  <form>
+    <fieldset>
+      <legend>Applicant Information</legend>
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" autocomplete="name" required><br><br>
+
+      <label for="address">Address:</label><br>
+      <input type="text" id="address" name="address" autocomplete="address-line1"><br><br>
+
+      <label for="phone">Phone No.:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit number"><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+    </fieldset>
+
+    <label for="role">Role:</label><br>
+    <select id="role" name="role">
+      <option value="protagonist">Protagonist</option>
+      <option value="side-character">Side Character</option>
+      <option value="antagonist">Antagonist</option>
+      <option value="backup-dancer">Back up Dancer</option>
+      <option value="backup-singer">Back up Singer</option>
+    </select><br><br>
+
+    
+    <label for="character">Your character:</label>
+    <input type="text" id="character" name="character" value="Any Hamilton Role"><br><br>
+
+    <button type="submit">Submit</button><br><br>
+
+<label for="note">Note:</label><br>
+    <textarea id="note" name="note" rows="4" cols="50" placeholder="Write a note here..."></textarea>
+<br>
+    <label for="appNo">Application No.:</label>
+    <input type="text" id="appNo" name="appNo" value="AUTO123456" readonly>
+  </form>
+</body>
+</html>
